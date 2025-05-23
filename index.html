@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Flexbox Responsivo</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="caja">
+    
+      <h1><img src="img/casa-logo.png" alt="Logo de Yourhouse">YourHouse</h1>
+      
+      
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+   
+  </header>
+
+  <main>
+    <section id="presentacion">
+      <div>
+        <h2>Encuentra tu nuevo <br>Hogar</h2>
+        
+      </div>
+      
+      <img src="img/house-4930613_1280.jpg" alt="imagen decorativa">
+    </section>
+
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 1">
+          <p>Producto 1</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 2">
+          <p>Producto 2</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="producto 3">
+          <p>Producto 3</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="reseñas">
+      <h2>Reseñas de Nuestros Clientes</h2>
+      
+      <div class="cards-container">
+          
+          <div class="card">
+              <h3>Juan Pérez</h3>
+              <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
+              <br><br><br>
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: gold"></i> <!-- Estrella a la mitad -->
+              </div>              
+          
+          </div>
+
+          <div class="card">
+            <h3>Juan Pérez</h3>
+            <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
+            <br><br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: gold"></i> <!-- Estrella a la mitad -->
+            </div>              
+        
+          </div>
+
+          <div class="card">
+            <h3>Juan Pérez</h3>
+            <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
+            <br><br><br>
+            <div class="stars">
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star" style="color: gold"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: gold"></i> <!-- Estrella a la mitad -->
+            </div>              
+      
+          </div>
+          
+          <div class="card">
+              <h3>Ana García</h3>
+              <p>"Un equipo muy profesional y atento. La experiencia fue increíble."</p>
+              <br><br><br>
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gray"></i>
+              </div>   
+          </div>
+          
+          <div class="card">
+              <h3>Pedro Rodríguez</h3>
+              <p>"Me encantó el trato personalizado. Definitivamente volveré a contratar sus servicios."</p>
+              <br><br><br>
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+                <i class="fa-solid fa-star" style="color: gold"></i>
+              </div>   
+          </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xgvkbjyp" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web</p>
+  </footer>
+</body>
+</html>
