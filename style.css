@@ -5,8 +5,18 @@ html {
 body {
   font-family: 'Montserrat', sans-serif; 
   margin: 0;                          
-  padding: 0;                         
+  padding: 0;     
+  background-color: #F4E9D3;
+  width: 100vw;                
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal inesperado */
+}
+
 
 header {
   background-color: #243770;
@@ -14,7 +24,7 @@ header {
   padding: 20px;
   position: fixed;
   height: 15vh;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
 }
 .caja{
@@ -63,12 +73,12 @@ nav a:hover{
 section {
   padding: 20px;
   text-align: center;
+  width: 100vw;
 }
 
 /* Presentacion */
 #presentacion{
   padding-top: 30vh;
-  background-color: #F4E9D3;
   height: 50vh;
   display: flex;
   justify-content: space-between;
@@ -103,6 +113,8 @@ section {
 
 #productos{
   background-color: #243770;
+  width: 100vw;
+  margin: 0;
 }
 
 #productos h2{
@@ -128,7 +140,6 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
   width: 300px;
   height: 400px;
- 
 }
 
 /* Imágenes de los productos */
@@ -156,6 +167,7 @@ section {
   flex-direction: column;
   align-items: center;
   background-color: #F4E9D3;
+  width: 100vw;
 }
 
 .reseñas h2 {
@@ -223,6 +235,7 @@ section {
   padding: 20px;
   background-color: #243770;
   border-radius: 8px;
+  width: 100vw;
 }
 
 .contenedor{
@@ -255,10 +268,10 @@ form {
 }
 
 .contacto input, .contacto textarea {
-  padding: 10px; /* Relleno dentro de los campos */
-  border: 1px solid #ddd; /* Borde sutil */
-  border-radius: 4px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de fuente para los campos */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+  font-size: 1em; 
   
 }
 
@@ -276,11 +289,12 @@ form {
 }
 
 iframe {
-  width: 50%;
+  margin-right: 10%;
+  width: 40%;
   height: 400px;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra elegante */
-  filter: grayscale(80%); /* Mapa en escala de grises */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  filter: grayscale(80%); 
 }
 
 /* Estilo para el pie de página */
@@ -290,6 +304,7 @@ footer {
   color: white;              /* Texto blanco */
   text-align: center;        /* Centrado de texto */
   padding: 15px;             /* Espacio interior */
+  width: 100vw;
 }
 
 .social-icons{
@@ -342,6 +357,7 @@ footer {
   .productos-container {
     flex-direction: column;  /* Apila los productos en una columna */
     align-items: center;     /* Centra verticalmente */
+    margin-bottom: 20%;
   }
 
   #presentacion{
