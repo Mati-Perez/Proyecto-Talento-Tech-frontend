@@ -234,8 +234,7 @@ section {
   align-items: center;
   padding: 20px 0;
   background-color: #243770;
-  border-radius: 8px;
-  width: 100vw;
+  width: 100%;
 }
 
 .contenedor{
@@ -334,6 +333,8 @@ footer {
   }
 
   nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
 
