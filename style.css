@@ -1,3 +1,6 @@
+html {
+  scroll-padding-top: 20vh;
+}
 
 body {
   font-family: 'Montserrat', sans-serif; 
@@ -5,16 +8,25 @@ body {
   padding: 0;                         
 }
 
-
 header {
   background-color: #243770;
   color: white;
   padding: 20px;
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  z-index: 1000;
 }
 .caja{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   position: relative;
   margin: 0 auto;
-  width: 940px;
+  width: 100%;
+  max-width: 940px;
+  font-size: 20px;
 }
 
 header img{
@@ -23,26 +35,22 @@ header img{
   display: flex;
 }
 
-nav{
-  position: absolute;
-  top: 80px;
-  right: 0;
-}
 nav ul {
+  display:flex;
+  gap: 40px;
   list-style: none;
-  padding: 0;
+  padding-top: 80px;
+  padding-right: 40px;
   justify-content: right;
-  gap: 20px;
 }
+
 nav li{
-  display: inline;
-  margin: 0 0 0 15px;
+  display: inline-block;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  
 }
 
 nav a:hover{
@@ -50,18 +58,21 @@ nav a:hover{
   text-decoration: underline;
 }
 
+/* Secciones */
+
 section {
   padding: 20px;
   text-align: center;
 }
 
+/* Presentacion */
 #presentacion{
+  padding-top: 30vh;
   background-color: #F4E9D3;
-  height: 350px;
+  height: 50vh;
   display: flex;
   justify-content: space-between;
 }
-
 
 #presentacion h2{
   font-size: 46px;
@@ -84,11 +95,14 @@ section {
   position: absolute;
   right: 0;
   margin: 20px;
+  padding-right: 80px;
+  border-radius: 20px;
 }
+
+/* Productos */
 
 #productos{
   background-color: #243770;
-  
 }
 
 #productos h2{
@@ -134,6 +148,8 @@ section {
   font-size: 20px;
 }
 
+
+/* reseñas */
 .reseñas {
   padding: 50px;
   display: flex;
@@ -156,7 +172,6 @@ section {
   gap: 20px; 
   padding: 20px; 
 }
-
 
 .card {
   background-color: white; 
@@ -194,7 +209,6 @@ section {
 
 }
 
-
 /* Aplicar animación a cada tarjeta */
 .card:nth-child(1) { animation: carousel 20s infinite; }
 .card:nth-child(2) { animation: carousel 20s infinite 4s; }
@@ -202,12 +216,13 @@ section {
 .card:nth-child(4) { animation: carousel 20s infinite 12s; }
 .card:nth-child(5) { animation: carousel 20s infinite 16s; }
 
+/* Contacto */
+
 .contacto{
   align-items: center;
   padding: 20px;
   background-color: #243770;
   border-radius: 8px;
-
 }
 
 .contenedor{
@@ -268,9 +283,8 @@ iframe {
   filter: grayscale(80%); /* Mapa en escala de grises */
 }
 
-
-
 /* Estilo para el pie de página */
+
 footer {
   background-color: #333;    /* Fondo oscuro */
   color: white;              /* Texto blanco */
@@ -295,6 +309,13 @@ footer {
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+  .caja{
+    justify-content: space-between;
+  }
+  nav ul{
+    gap: 15px;
+  }
+
   /* Ajustes en la disposición de las cards */
   .reseñas .cards-container {
       grid-template-columns: 1fr; /* Las cards se apilan en una sola columna */
@@ -317,22 +338,40 @@ footer {
   .contacto button {
       padding: 8px; /* Reduce el padding en el botón */
   }
+
+  .productos-container {
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;     /* Centra verticalmente */
+  }
+
+  #presentacion{
+    flex-direction: column; 
+    align-items: center;  
+  }
+
+  #presentacion img{
+    padding-right: 0;
+  }
 }
-
-
 
 /* ------------------ MEDIA QUERIES ------------------ */
 
  /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
  @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
-    gap: 10px;               /* Menor espacio entre ellos */
-  }
+ 
 
   .productos-container {
     flex-direction: column;  /* Apila los productos en una columna */
     align-items: center;     /* Centra verticalmente */
+  }
+
+  #presentacion{
+    flex-direction: column; 
+    align-items: center;  
+  }
+
+  #presentacion img{
+    padding-right: 0;
   }
 }
 
@@ -340,5 +379,13 @@ footer {
 @media (min-width: 601px) and (max-width: 1024px) {
   .productos-container {
     justify-content: space-evenly; /* Distribuye los productos uniformemente */
+  }
+
+  #presentacion{
+    justify-content: space-evenly;
+  }
+
+  #presentacion img{
+    padding-right: 0;
   }
 }
