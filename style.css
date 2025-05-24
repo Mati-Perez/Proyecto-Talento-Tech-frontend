@@ -101,8 +101,8 @@ section {
 #presentacion img{
   width: 500px;
   height: 300px;
-  position: absolute;
-  right: 0;
+  position:relative;
+  right: auto;
   margin: 20px;
   padding-right: 80px;
   border-radius: 20px;
@@ -303,7 +303,7 @@ footer {
   background-color: #333;    /* Fondo oscuro */
   color: white;              /* Texto blanco */
   text-align: center;        /* Centrado de texto */
-  padding: 15px;             /* Espacio interior */
+  padding: 15px 0;             /* Espacio interior */
   width: 100vw;
 }
 
@@ -327,8 +327,14 @@ footer {
   .caja{
     justify-content: space-between;
   }
+
+  nav ul li a{
+    font-size: 14px;
+    padding: 8px;
+  }
+
   nav ul{
-    gap: 15px;
+    gap: 10px;
   }
 
   /* Ajustes en la disposición de las cards */
@@ -381,10 +387,16 @@ footer {
   #presentacion{
     flex-direction: column; 
     align-items: center;  
+    height: auto; 
   }
-
+  #presentacion h2{
+    padding: 0;
+    margin: 0;
+  }
   #presentacion img{
-    padding-right: 0;
+    max-width: 80%; 
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -410,6 +422,7 @@ footer {
 
   #presentacion img{
     padding-right: 0;
+    
   }
 }
 
@@ -431,5 +444,6 @@ footer {
 
   #presentacion img{
     padding-right: 0;
+   
   }
 }
