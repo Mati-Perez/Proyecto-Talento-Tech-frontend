@@ -71,7 +71,6 @@ nav a:hover{
 /* Secciones */
 
 section {
-  padding: 20px;
   text-align: center;
   width: 100vw;
 }
@@ -115,6 +114,7 @@ section {
   background-color: #243770;
   width: 100vw;
   margin: 0;
+  padding: 20px 0;
 }
 
 #productos h2{
@@ -162,7 +162,7 @@ section {
 
 /* reseñas */
 .reseñas {
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,14 +232,14 @@ section {
 
 .contacto{
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #243770;
   border-radius: 8px;
   width: 100vw;
 }
 
 .contenedor{
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -338,26 +338,44 @@ footer {
 
   /* Ajustes en el formulario para pantallas pequeñas */
   .contacto {
-      padding: 15px; /* Reduce el padding */
+    padding: 15px; /* Reduce el padding */
+  }
+  .contacto .contenedor{
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;
+  }
+
+  .contacto iframe{
+    width: 70vw;
+    padding: 0;
+    margin: 0;
   }
 
   .contacto form {
-      gap: 10px; /* Reduce el espacio entre los elementos del formulario */
+    width: 70vw;
+    gap: 10px; /* Reduce el espacio entre los elementos del formulario */
   }
 
   .contacto input, .contacto textarea {
-      font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
-      padding: 8px; /* Reduce el padding en los campos */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
+    padding: 8px; /* Reduce el padding en los campos */
   }
 
   .contacto button {
-      padding: 8px; /* Reduce el padding en el botón */
+    padding: 8px; /* Reduce el padding en el botón */
   }
 
   .productos-container {
     flex-direction: column;  /* Apila los productos en una columna */
     align-items: center;     /* Centra verticalmente */
+    margin:0;
+    padding:0;
     margin-bottom: 20%;
+  }
+
+  .productos{
+    margin:0;
+    padding:0;
   }
 
   #presentacion{
@@ -375,6 +393,10 @@ footer {
  /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
  @media (max-width: 600px) {
  
+  .contacto{
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;
+  }
 
   .productos-container {
     flex-direction: column;  /* Apila los productos en una columna */
@@ -393,6 +415,12 @@ footer {
 
 /* Media Query para TABLETS (de 601px a 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
+
+  .contacto{
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;
+  }
+
   .productos-container {
     justify-content: space-evenly; /* Distribuye los productos uniformemente */
   }
