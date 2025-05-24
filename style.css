@@ -1,11 +1,9 @@
 /* Fuente predeterminada del sitio */
 
 body {
-  font-family: 'Roboto', sans-serif; /* Fuente importada desde Google Fonts */
-  margin: 0;                          /* Elimina márgenes del navegador */
-  padding: 0;                         /* Elimina relleno por defecto */
-  /* --------*/
-  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif; 
+  margin: 0;                          
+  padding: 0;                         
 }
 
 /* Estilo para el encabezado de la página */
@@ -21,7 +19,7 @@ header {
 }
 
 header img{
-  width: 120px;
+  width: 140px;
   height: 80px;
   display: flex;
 }
@@ -64,13 +62,24 @@ section {
 #presentacion{
   background-color: #F4E9D3;
   height: 350px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 #presentacion h2{
-  position: absolute;
-  left: 0;
- 
+  font-size: 46px;
+  font-weight: bolder;
+  width: 60vw;
+  height: 50vw;
+  margin-top: 100px;
+  color: #243770;
+  -webkit-text-stroke: 1px;
+  text-shadow:
+  -1px 0 #fff,
+  0 1px #fff,
+  1px 0 #fff,
+  0 -1px #fff;
 }
 
 #presentacion img{
@@ -78,12 +87,20 @@ section {
   height: 300px;
   position: absolute;
   right: 0;
-  margin: 15px
+  margin: 20px;
 }
 
 #productos{
   background-color: #243770;
   
+}
+
+#productos h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .productos-container {
@@ -96,6 +113,13 @@ section {
 
 .producto {
   text-align: center;
+  background-color: rgb(247, 245, 245, 0.5); 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+  width: 300px;
+  height: 200px;
+ 
 }
 
 /* Imágenes de los productos */
@@ -104,133 +128,6 @@ section {
   height: 150px;             /* Alto fijo */
   object-fit: cover;         /* Cubre el área sin deformarse */
 }
-
-
-
-.contacto{
-  padding: 20px;
-  background-color: #243770;
-  border-radius: 8px;
-
-}
-
-.contacto h2{
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 400px;  
-  margin: 0 auto; 
-}
-
-.contacto label{
-  font-size: 1.1em;
-  color: #fff;
-}
-
-.contacto input, .contacto textarea {
-  padding: 10px; /* Relleno dentro de los campos */
-  border: 1px solid #ddd; /* Borde sutil */
-  border-radius: 4px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de fuente para los campos */
-  
-}
-
-.contacto button {
-  padding: 10px; /* Relleno dentro del botón */
-  background-color: #4CAF50; /* Fondo verde para el botón */
-  color: white; /* Texto blanco */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
-}
-
-.contacto button:hover {
-  background-color: #45a049; /* Cambia el color del botón al pasar el ratón */
-}
-
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-  /* Ajustes en la disposición de las cards */
-  .reseñas .cards-container {
-      grid-template-columns: 1fr; /* Las cards se apilan en una sola columna */
-  }
-
-  /* Ajustes en el formulario para pantallas pequeñas */
-  .contacto {
-      padding: 15px; /* Reduce el padding */
-  }
-
-  .contacto form {
-      gap: 10px; /* Reduce el espacio entre los elementos del formulario */
-  }
-
-  .contacto input, .contacto textarea {
-      font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
-      padding: 8px; /* Reduce el padding en los campos */
-  }
-
-  .contacto button {
-      padding: 8px; /* Reduce el padding en el botón */
-  }
-}
-
-/* Estilo para el pie de página */
-footer {
-  background-color: #333;    /* Fondo oscuro */
-  color: white;              /* Texto blanco */
-  text-align: center;        /* Centrado de texto */
-  padding: 15px;             /* Espacio interior */
-}
-
-/* ------------------ MEDIA QUERIES ------------------ */
-
- /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
-    gap: 10px;               /* Menor espacio entre ellos */
-  }
-
-  .productos-container {
-    flex-direction: column;  /* Apila los productos en una columna */
-    align-items: center;     /* Centra verticalmente */
-  }
-}
-
-/* Media Query para TABLETS (de 601px a 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .productos-container {
-    justify-content: space-evenly; /* Distribuye los productos uniformemente */
-  }
-}
-/*
-/* Media Query para PC (más de 1024px) 
-@media (min-width: 1025px) {
-  .productos-container {
-    justify-content: space-between; /* Aumenta el espacio entre productos 
-  }
-}*/
-
-/*
-.reseñas h2 {
-  font-size: 2em; 
-  margin-bottom: 20px; 
-}
-
-
-.cards-container {
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px; 
-  padding: 20px; 
-}
-
-*/
 
 .reseñas {
   padding: 50px;
@@ -265,6 +162,11 @@ footer {
   height: 200px;
   position: absolute;
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+  opacity: 0; /* Oculta las tarjetas al inicio */
+  animation: carousel 20s infinite;
+  animation-delay: 2s; /* Espera 1 segundo antes de comenzar */
+
 }
 
 .card h3 {
@@ -287,6 +189,7 @@ footer {
 
 }
 
+
 /* Aplicar animación a cada tarjeta */
 .card:nth-child(1) { animation: carousel 20s infinite; }
 .card:nth-child(2) { animation: carousel 20s infinite 4s; }
@@ -294,3 +197,143 @@ footer {
 .card:nth-child(4) { animation: carousel 20s infinite 12s; }
 .card:nth-child(5) { animation: carousel 20s infinite 16s; }
 
+.contacto{
+  align-items: center;
+  padding: 20px;
+  background-color: #243770;
+  border-radius: 8px;
+
+}
+
+.contenedor{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;  
+  margin: 0 auto; 
+  height: 50vh;
+  width: 40vw;
+}
+
+.contacto label{
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.contacto input, .contacto textarea {
+  padding: 10px; /* Relleno dentro de los campos */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de fuente para los campos */
+  
+}
+
+.contacto button {
+  padding: 10px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.contacto button:hover {
+  background-color: #45a049; 
+}
+
+iframe {
+  width: 50%;
+  height: 400px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+  filter: grayscale(80%); /* Mapa en escala de grises */
+}
+
+
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #333;    /* Fondo oscuro */
+  color: white;              /* Texto blanco */
+  text-align: center;        /* Centrado de texto */
+  padding: 15px;             /* Espacio interior */
+}
+
+.social-icons{
+  margin: 20px;
+}
+
+.social-icons a {
+  color: white; /* Color de los iconos */
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #EC008C;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ajustes en la disposición de las cards */
+  .reseñas .cards-container {
+      grid-template-columns: 1fr; /* Las cards se apilan en una sola columna */
+  }
+
+  /* Ajustes en el formulario para pantallas pequeñas */
+  .contacto {
+      padding: 15px; /* Reduce el padding */
+  }
+
+  .contacto form {
+      gap: 10px; /* Reduce el espacio entre los elementos del formulario */
+  }
+
+  .contacto input, .contacto textarea {
+      font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
+      padding: 8px; /* Reduce el padding en los campos */
+  }
+
+  .contacto button {
+      padding: 8px; /* Reduce el padding en el botón */
+  }
+}
+
+
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+ /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
+ @media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
+    gap: 10px;               /* Menor espacio entre ellos */
+  }
+
+  .productos-container {
+    flex-direction: column;  /* Apila los productos en una columna */
+    align-items: center;     /* Centra verticalmente */
+  }
+}
+
+/* Media Query para TABLETS (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .productos-container {
+    justify-content: space-evenly; /* Distribuye los productos uniformemente */
+  }
+}

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Flexbox Responsivo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,7 +20,7 @@
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
+          <li><a href="#productos">Propiedades</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -38,7 +39,40 @@
     </section>
 
     <section id="productos">
-      <h2>Productos</h2>
+      <h2>Propiedades</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 1">
+          <p>Producto 1</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 2">
+          <p>Producto 2</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="producto 3">
+          <p>Producto 3</p>
+        </div>
+      </div>
+      <div class="productos-container">
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 1">
+          <p>Producto 1</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="Producto 2">
+          <p>Producto 2</p>
+        </div>
+
+        <div class="producto">
+          <img src="https://picsum.photos/150" alt="producto 3">
+          <p>Producto 3</p>
+        </div>
+      </div>
+
       <div class="productos-container">
         <div class="producto">
           <img src="https://picsum.photos/150" alt="Producto 1">
@@ -64,8 +98,8 @@
       <div class="cards-container">
           
           <div class="card">
-              <h3>Juan Pérez</h3>
-              <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
+              <h3>Lucas Herbert</h3>
+              <p>"Me recomendaron estos servicios y superaron mis expectativas. Los volveria a elegir."</p>
               <br><br><br>
               <div class="stars">
                 <i class="fa-solid fa-star" style="color: gold"></i>
@@ -78,8 +112,8 @@
           </div>
 
           <div class="card">
-            <h3>Juan Pérez</h3>
-            <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
+            <h3>Alfredo Favalli</h3>
+            <p>"Muy atentos y amables. Servicio de lujo. 100% recomendados."</p>
             <br><br><br>
             <div class="stars">
               <i class="fa-solid fa-star" style="color: gold"></i>
@@ -92,7 +126,7 @@
           </div>
 
           <div class="card">
-            <h3>Juan Pérez</h3>
+            <h3>Juan Salvo</h3>
             <p>"Excelente servicio, muy recomendable. Todo salió perfecto."</p>
             <br><br><br>
             <div class="stars">
@@ -132,21 +166,24 @@
           </div>
       </div>
     </section>
-
+    
     <section class="contacto" id="contacto">
       <h2>Contacto</h2>
-      <form action="https://formspree.io/f/xgvkbjyp" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Correo electronico:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="contenedor">
+        <form action="https://formspree.io/f/xgvkbjyp" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          <label for="correo">Correo electronico:</label>
+          <input type="email" id="correo" name="correo" required>
+  
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.12920028322!2d-58.5381281246264!3d-34.575597256013076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb773958f8899%3A0xfd1783126f11c552!2sInmobiliaria%20Herrera%20de%20Evers!5e0!3m2!1ses!2sar!4v1748045957700!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
   </main>
@@ -154,6 +191,13 @@
 
   <footer>
     <p>&copy; 2025 Mi Sitio Web</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  
   </footer>
 </body>
 </html>
