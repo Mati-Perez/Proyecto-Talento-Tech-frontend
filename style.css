@@ -1,5 +1,9 @@
 html {
   scroll-padding-top: 20vh;
+  
+  scroll-behavior: smooth;
+
+
 }
 
 body {
@@ -44,6 +48,14 @@ header img{
   height: 80px;
   display: flex;
 }
+
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  background: none;
+}
+
+
 
 nav ul {
   display:flex;
@@ -143,6 +155,53 @@ section {
 }
 
 /* Imágenes de los productos */
+
+.contenedor-imagen{
+  position: relative;
+  display: inline-block;
+}
+
+.btn-favorito{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-favorito i{
+  color: gray;
+  font-size: 20px;
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.2); }
+  60% { transform: scale(1); } 
+  100% { transform: scale(1.1); }
+}
+
+.btn-favorito.activo i{
+  color: #EC008C;
+  animation: latido 0.3s ease-in-out;
+}
+
+.btn-favorito:hover{
+  background-color: rgba(255,192,203,0.7);
+}
+
+.btn-favorito:hover i
+{
+  color: #EC008C;
+}
 .producto img {
   border-radius: 8px;
   width: 300px;
@@ -153,12 +212,6 @@ section {
 .producto p{
   margin: 15px;
 }
-
-.precio{
-  font-weight: 700;
-  font-size: 20px;
-}
-
 
 /* reseñas */
 .reseñas {
@@ -327,6 +380,45 @@ footer {
     justify-content: space-between;
   }
 
+  .hamburguesa{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 60px;
+  }
+  .menu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .menu.activo{
+    display: block;
+  }
+  .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu li a{
+    text-decoration: none;
+    color: #333;
+  }
+
   nav ul li a{
     font-size: 14px;
     padding: 8px;
@@ -405,7 +497,22 @@ footer {
 
  /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
  @media (max-width: 600px) {
- 
+  .caja{
+    justify-content: space-between;
+  }
+  
+  nav ul li a{
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  nav ul{
+    padding-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .contacto{
     flex-direction: column;  /* Apila los productos en una columna */
     align-items: center;
@@ -423,6 +530,8 @@ footer {
 
   #presentacion img{
     padding-right: 0;
+    height: 50vh;
+    width: 9aQ60vw;
     
   }
 }
