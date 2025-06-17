@@ -487,6 +487,7 @@ footer {
     margin: 0;
   }
   #presentacion img{
+    height: 20px;
     max-width: 80%; 
     padding: 0;
     margin: 0;
@@ -530,7 +531,7 @@ footer {
 
   #presentacion img{
     padding-right: 0;
-    height: 50vh;
+    height: 30vh;
     width: 9aQ60vw;
     
   }
@@ -554,6 +555,6 @@ footer {
 
   #presentacion img{
     padding-right: 0;
-   
+    height: 30vh;
   }
 }

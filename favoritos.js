@@ -142,6 +142,15 @@ const toggleHeart = (button, prop) => {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.querySelector(".hamburguesa");
+  const menu = document.querySelector(".menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("activo");
+  });
+})
+
 window.addEventListener("beforeunload", () => {
  
 
