@@ -432,15 +432,15 @@ footer {
 
   /* Ajustes en la disposición de las cards */
   .reseñas .cards-container {
-      grid-template-columns: 1fr; /* Las cards se apilan en una sola columna */
+      grid-template-columns: 1fr;
   }
 
   /* Ajustes en el formulario para pantallas pequeñas */
   .contacto {
-    padding: 15px; /* Reduce el padding */
+    padding: 15px 0;
   }
   .contacto .contenedor{
-    flex-direction: column;  /* Apila los productos en una columna */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -452,21 +452,21 @@ footer {
 
   .contacto form {
     width: 70vw;
-    gap: 10px; /* Reduce el espacio entre los elementos del formulario */
+    gap: 10px;
   }
 
   .contacto input, .contacto textarea {
-    font-size: 0.9em; /* Reduce el tamaño de la fuente en los campos */
-    padding: 8px; /* Reduce el padding en los campos */
+    font-size: 0.9em;
+    padding: 8px;
   }
 
   .contacto button {
-    padding: 8px; /* Reduce el padding en el botón */
+    padding: 8px;
   }
 
   .productos-container {
-    flex-direction: column;  /* Apila los productos en una columna */
-    align-items: center;     /* Centra verticalmente */
+    flex-direction: column; 
+    align-items: center;
     margin:0;
     padding:0;
     margin-bottom: 20%;
