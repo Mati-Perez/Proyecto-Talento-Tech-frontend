@@ -494,6 +494,68 @@ footer {
   }
 }
 
+#btn-vaciar{
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#btn-vaciar:hover{
+  cursor: pointer;
+  background-color: #243770;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background-color: #F4E9D3;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80dvh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  position: relative;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal.visible .modal-contenido {
+  transform: scale(1);
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 /* ------------------ MEDIA QUERIES ------------------ */
 
  /*Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
@@ -534,6 +596,16 @@ footer {
     height: 30vh;
     width: 9aQ60vw;
     
+  }
+
+  .modal-contenido {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .cerrar {
+    top: 5px;
+    right: 10px;
   }
 }
 

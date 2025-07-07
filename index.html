@@ -23,10 +23,8 @@
           <li><a href="#presentacion">Inicio</a></li>
           <li><a href="#productos">Propiedades</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="favoritos.html">Favoritos</a></li>
+          <li id="favoritos"><a href="favoritos.html">Favoritos</a></li>
         </ul>
-
-       
       </nav>
     </div>
    
@@ -43,150 +41,17 @@
 
     <section id="productos">
       <h2>Propiedades</h2>
-      <div class="productos-container">
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/departamento1.jpg" alt="Producto 1">
-            <button class="btn-favorito" id="heart1" onclick="agregarAFavoritos(this, 'img/departamento1.jpg', 'Departamento - 2 ambientes', 'USD 68.000', 'Zeballos 503', 'Distrito Centro, Rosario')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          <p style="color: white">Departamento - 2 ambientes</p>
-          <p class="precio">USD 68.000</p>
-          <p>Zeballos 503</p>
-          <p style="color: white">Distrito Centro, Rosario</p>
-         
-          <a href="#">Ver mas</a>
-        </div>
+      <div id="propiedades-container">
 
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/departamento2.jpg" alt="Producto 2">
-            <button class="btn-favorito" id="heart2" onclick="agregarAFavoritos(this,'img/departamento2.jpg', 'Departamento - 4 ambientes', 'USD 157.000', 'Oro 879 Ramos Mejia', 'Ramos Mejia, La Matanza')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          <p style="color: white">Departamento - 4 ambientes</p>
-          <p class="precio">USD 157.000</p>
-          <p>Oro 879 Ramos Mejia</p>
-          <p style="color: white">Ramos Mejia, La Matanza</p>
-          <a href="#">Ver mas</a>
-        </div>
-
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/departamento3.jpg" alt="producto 3">
-            <button class="btn-favorito" id="heart3" onclick="agregarAFavoritos(this,'img/departamento3.jpg', 'Departamento - monoambiente', 'USD 79.500', 'Av. Rivadavia 3269', 'Balvanera, Capital Federal')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-
-          <p style="color: white">Departamento - monoambiente</p>
-          <p class="precio">USD 79.500</p>
-          <p>Av. Rivadavia 3269</p>
-          <p style="color: white">Balvanera, Capital Federal</p>
-          <a href="#">Ver mas</a>
-        </div>
-      </div>
-      <div class="productos-container">
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa1.jpg" alt="Producto 1">
-            <button class="btn-favorito" id="heart4" onclick="agregarAFavoritos(this,'img/casa1.jpg', 'Alquiler - Departamento - 3 ambientes', '$ 680.000', 'Pascual Segura 1224. Godoy Cruz', 'Godoy Cruz, Mendoza')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          
-          <p style="color: white"> Alquiler - Departamento - 3 ambientes</p>
-          <p class="precio">$ 680.000</p>
-          <p>Pascual Segura 1224. Godoy Cruz</p>
-          <p style="color: white">Godoy Cruz, Mendoza</p>
-          <a href="#">Ver mas</a>
-        </div>
-
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa2.jpg" alt="Producto 2">
-            <button class="btn-favorito" id="heart5" onclick="agregarAFavoritos(this,'img/casa2.jpg', 'Alquiler - Departamento - 3 ambientes', '$ 680.000', '9 de Julio al 900', 'Ciudad de Mendoza, Mendoza')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-        
-          <p style="color: white"> Alquiler - Departamento - 3 ambientes</p>
-          <p class="precio">$ 680.000</p>
-          <p>9 de Julio al 900</p>
-          <p style="color: white">Ciudad de Mendoza, Mendoza</p>
-          <a href="#">Ver mas</a>
-          <br>
-        </div>
-
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa3.jpg" alt="producto 3">
-            <button class="btn-favorito" id="heart6" onclick="agregarAFavoritos(this,'img/casa3.jpg', 'Alquiler - Departamento - 3 ambientes', '$ 540.000', 'Zeballos 503', 'Distrito Centro, Rosario')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          
-          <p style="color: white">Alquiler - Departamento - 3 ambientes</p>
-          <p class="precio">$ 540.000</p>
-          <p>Zeballos 503</p>
-          <p style="color: white">Distrito Centro, Rosario</p>
-
-          <a href="#">Ver mas</a>
-          <br>
-        </div>
       </div>
 
-      <div class="productos-container">
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa4.jpg" alt="Producto 1">
-            <button class="btn-favorito" id="heart7" onclick="agregarAFavoritos(this,'img/casa4.jpg', 'Departamento - 2 ambientes', 'USD 68.000', 'Zeballos 503', 'Distrito Centro, Rosario')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          
-          <p style="color: white">Departamento - 2 ambientes</p>
-          <p class="precio">USD 68.000</p>
-          <p>Zeballos 503</p>
-          <p style="color: white">Distrito Centro, Rosario</p>
-        
-          <a href="#">Ver mas</a>
-        </div>
-
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa5.jpg" alt="Producto 2">
-            <button class="btn-favorito" id="heart8" onclick="agregarAFavoritos(this,'img/casa5.jpg', 'Departamento - 2 ambientes', 'USD 68.000', 'Zeballos 503', 'Distrito Centro, Rosario')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          
-          <p style="color: white">Departamento - 2 ambientes</p>
-          <p class="precio">USD 68.000</p>
-          <p>Zeballos 503</p>
-          <p style="color: white">Distrito Centro, Rosario</p>
-          <a href="#">Ver mas</a>
-        </div>
-
-        <div class="producto">
-          <div class="contenedor-imagen">
-            <img src="img/casa6.jpg" alt="producto 3">
-            <button class="btn-favorito" id="heart9" onclick="agregarAFavoritos(this,'img/casa6.jpg', 'Departamento - 2 ambientes', 'USD 68.000', 'Zeballos 503', 'Distrito Centro, Rosario')">
-              <i class="fa-solid fa-heart fa-2x"></i>
-            </button>
-          </div>
-          
-          <p style="color: white">Departamento - 2 ambientes</p>
-          <p class="precio">USD 68.000</p>
-          <p>Zeballos 503</p>
-          <p style="color: white">Distrito Centro, Rosario</p>
-          <a href="#">Ver mas</a>
-        </div>
-    
+      <div id="modal" class="modal oculto">
+        <div class="modal-contenido" id="modal-detalle">
+          <span class="cerrar">&times;</span>
+          <!-- Contenido dinámico va acá -->
         </div>
       </div>
+      
     </section>
 
     

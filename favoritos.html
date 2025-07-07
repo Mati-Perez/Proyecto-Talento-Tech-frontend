@@ -18,15 +18,12 @@
       <h1><a href="./index.html"><img src="img/casa-logo.png" alt="Logo de Yourhouse"></a>YourHouse</h1>
       <button class="hamburguesa" aria-label="Abrir menu">&#9776;</button> 
       <nav class="menu">
-
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="index.html#productos">Propiedades</a></li>
           <li><a href="index.html#contacto">Contacto</a></li>
-          <li><a href="#">Favoritos</a></li>
+          <li id="fav"><a href="#">Favoritos</a></li>
         </ul>
-
-       
       </nav>
     </div>
    
@@ -49,6 +46,13 @@
         
       </section>
 
+      <div id="modal" class="modal oculto">
+        <div class="modal-contenido" id="modal-detalle">
+          <span class="cerrar">&times;</span>
+          <!-- Contenido dinámico va acá -->
+        </div>
+      </div>
+      
 
     </section>
   </main>
